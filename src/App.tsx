@@ -1,10 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import Button from "./components/Button";
+import Form from "./components/Form";
+import Modal from "./components/Modal";
 
-function App() {
-  return <></>;
-}
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <Navbar />
+      <Card />
+      <Button />
+      <Form />
+      <Modal />
+    </div>
+  );
+};
 
 export default App;
